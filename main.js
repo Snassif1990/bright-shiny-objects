@@ -65,9 +65,11 @@ function addGrades(student, newGrades){
 // Accepts two parameters, an object and a key in that object
 // Returns the data type of the value at that key in the object
 
-function getDataType(car){
-    // let vehicle = typeof JSON.parse(car);
-    return typeof car.needsMaintenance;
+function getDataType(car, key){
+    // let obj = car[key]
+    //return typeof obj
+
+    return typeof car[key]
 }
 
 
